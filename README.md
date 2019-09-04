@@ -2,8 +2,8 @@
 :book: At the moment our application is only a composition of visual elements. All data so far is hard-coded into our app. Unfortunately, any real-world app needs to handle data, and there are many, many ways of approaching this problem. 
 
 ## In this exercise you will learn:
-- Context API
-- Redux
+- To use the context API
+- How Redux works
 
 ## Reminder: Todo app spec
 
@@ -40,7 +40,7 @@ Remember that React has built-in internal state in class components. Sometimes, 
 
 When we use props we pass data from a parent component to a child component. It allows us to access state at different levels of the component. In situations where you’re looking to get the state from the top of your react tree to the bottom you might end up passing props through components that do not necessarily need them.
 
-React Context is a really good alternative to solve this problem.  React Context is a way for a child component to access a value in a parent component. With context we can share data that can be considered global for a tree of React components. Lets say we want to add a “theme” prop in order to style the delete button in todoItem.
+React Context is a really good alternative to solve this problem. React Context is a way for a child component to access a value in a parent component. With context we can share data that can be considered global for a tree of React components. Lets say we want to add a “theme” prop in order to style the delete button in todoItem.
 
 :pencil2: create a new file `theme.js` and copy & paste the following content:
 ```js
